@@ -27,7 +27,7 @@ lxml==4.2.2
 parsel==1.4.0
 Pillow==3.4.2
 ply==3.11
-psycopg2==2.6.2
+psycopg2==2.7.5
 pyasn1==0.4.3
 pyasn1-modules==0.2.1
 pycparser==2.18

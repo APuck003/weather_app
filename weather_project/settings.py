@@ -26,8 +26,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'a9lxdu-1c-_*iyb9qx+9xm3_e_etk(hagr8ffx25v&9c$62%%a')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
+DEBUG = True
+# DEBUG = False
+# DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = []
 
@@ -87,6 +88,8 @@ DATABASES = {
 }
 
 
+
+
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
@@ -131,4 +134,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Heroku: Update database configuration from $DATABASE_URLa
 db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'] = db_from_env
+DATABASES['default'].update(db_from_env)
+# DATABASES['default'] = db_from_env

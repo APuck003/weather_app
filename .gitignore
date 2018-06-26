@@ -108,3 +108,6 @@ venv.bak/
 
 # Database
 *.sqlite3
+
+*.pyc
+__pycache__

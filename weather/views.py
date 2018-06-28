@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.views.generic.edit import DeleteView
-from django.urls import reverse_lazy
+# from django.views.generic.edit import DeleteView
+# from django.urls import reverse_lazy
 import requests
 
 from .models import City
@@ -39,6 +39,6 @@ def index(request):
     return render(request, 'weather/weather.html', context)
 
 
-class CityDelete(DeleteView):
-    model = City
-    success_url = reverse_lazy('index')
+# class CityDelete(DeleteView):
+#     model = City
+#     success_url = reverse_lazy('index')

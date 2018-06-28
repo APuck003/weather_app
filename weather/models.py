@@ -11,5 +11,5 @@ class City(models.Model):
     class Meta:
         verbose_name_plural = 'cities'
 
-    def get_absolute_url(self):
-        return reverse('index')
+    # def get_absolute_url(self):
+    #     return reverse('index')

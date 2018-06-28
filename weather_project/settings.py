@@ -30,7 +30,7 @@ DEBUG = True
 # DEBUG = False
 # DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['desolate-peak-53894.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -133,6 +133,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Heroku: Update database configuration from $DATABASE_URLa
-db_from_env = dj_database_url.config(conn_max_age=500)
+db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 # DATABASES['default'] = db_from_env

@@ -23,7 +23,7 @@ idna==2.7
 incremental==17.5.0
 jsonpath-rw==1.4.0
 kombu==3.0.37
-lxml==4.2.2
+lxml==4.6.2
 parsel==1.4.0
 Pillow==3.4.2
 ply==3.11

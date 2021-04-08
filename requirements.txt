@@ -14,7 +14,7 @@ cssselect==1.0.3
 decorator==4.3.0
 dj-config-url==0.1.1
 dj-database-url==0.5.0
-Django==2.2.10
+Django==2.2.20
 django-celery==3.2.2
 django-dynamic-scraper==0.13.1
 future==0.15.2
